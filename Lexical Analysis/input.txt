@@ -1,0 +1,29 @@
+int main()
+{
+    int _number;
+    int a=2+3i;
+    int b=4i;
+    int c=5+i;
+    int d=-i;
+    while(1)
+    {
+        printf("Enter an integer:");
+        scanf("%d", &_number);
+        for(int i=1; i<=_number; i++)
+        {
+            int count=0;
+            for(int j=1; j<=i; j++)
+            {
+                if(i%j==0)
+                {
+                    count++;
+                }
+                if(count>3)
+                    break;
+            }
+            if(count==3)  /*print the numbers with exact 3 divisors.*/
+                printf("%d ", i);
+        }
+    }
+
+}
